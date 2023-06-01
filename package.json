@@ -6,6 +6,9 @@
   "repository": "https://github.com/mavafadar/ethernaut-solutions.git",
   "author": "Sina Vafadar <snvfdr@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "hello-ethernaut": "yarn hardhat test ./test/00-hello-ethernaut.test.js"
+  },
   "devDependencies": {
     "@chainlink/contracts": "0.4.1",
     "@nomicfoundation/hardhat-chai-matchers": "1.0.0",
