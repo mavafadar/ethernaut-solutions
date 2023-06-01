@@ -1,0 +1,12 @@
+{
+  "name": "ethernaut-solutions",
+  "version": "1.0.0",
+  "description": "Solutions to the ethernaut challenges using HardHat.",
+  "main": "index.js",
+  "repository": "https://github.com/mavafadar/ethernaut-solutions.git",
+  "author": "Sina Vafadar <snvfdr@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "hardhat": "^2.14.1"
+  }
+}
