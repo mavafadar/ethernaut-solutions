@@ -38,7 +38,14 @@ Make sure you have the following prerequisites installed on your system:
 
 ## Installation
 
-To run the tests for a specific challenge, you can use the following command:
+To run the tests for a specific challenge, firstly go to the following file and enter your contract address for that level there:
+
+```shell
+test/<challenge-number>-<challenge-name>.test.js
+```
+
+
+you can use the following command:
 
 ```shell
 yarn hardhat test test/<challenge-number>-<challenge-name>.test.js
