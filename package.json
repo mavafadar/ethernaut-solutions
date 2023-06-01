@@ -8,7 +8,8 @@
   "license": "MIT",
   "scripts": {
     "hello-ethernaut": "yarn hardhat test ./test/00-hello-ethernaut.test.js",
-    "fallback": "yarn hardhat test ./test/01-fallback.test.js"
+    "fallback": "yarn hardhat test ./test/01-fallback.test.js",
+    "coin-flip": "yarn hardhat test ./test/02-coin-flip.test.js"
   },
   "devDependencies": {
     "@chainlink/contracts": "0.4.1",
