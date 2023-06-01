@@ -38,6 +38,9 @@ Make sure you have the following prerequisites installed on your system:
 
 ## Installation
 
+In the first step, add the `.env` file, and add your RPC_URL and private key. I use the sepolia testnet. If you want to change it,
+change the details in `hardhat.config.js` file.
+
 To run the tests for a specific challenge, firstly go to the following file and enter your contract address for that level there:
 
 ```shell
@@ -48,10 +51,10 @@ test/<challenge-number>-<challenge-name>.test.js
 you can use the following command:
 
 ```shell
-yarn hardhat test test/<challenge-number>-<challenge-name>.test.js
+yarn run <challenge-name>
 ```
 
-Replace <challenge-number> with the number of the challenge using two digits (e.g. instead of 5 enter 05), and replace <challenge-name> with the name of the desired challenge with dash instead of space, all lower-case.
+Replace <challenge-name> with the name of the desired challenge with dash instead of space, all lower-case.
 
 
 ## Challenges
