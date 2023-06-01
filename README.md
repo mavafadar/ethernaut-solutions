@@ -61,7 +61,8 @@ Replace <challenge-name> with the name of the desired challenge with dash instea
 
 Below is a list of challenges and their corresponding files in this repository:
 
-- Challenge 00, Hello Ethernaut: [Contract](./contracts/00HelloEthernaut.sol), [Explanation](./docs/00-hello-ethernaut.md), [Solution Code](./test/00-hello-ethernaut.test.js)
+- Challenge 00, Hello Ethernaut: [Contract](./contracts/00HelloEthernaut.sol), [Explanation](./docs/00-hello-ethernaut.md), [Solution JS Code](./test/00-hello-ethernaut.test.js), [Solution Solidity Code](./contracts/00HelloEthernautSolution.sol)
+- Challenge 01, Fallback: [Contract](./contracts/01Fallback.sol), [Explanation](./docs/01-fallback.md), [Solution JS Code](./test/01-fallback.test.js), [Solution Solidity Code](./contracts/01FallbackSolution.sol)
 
 Feel free to explore the code for each challenge and run the tests to verify the solutions.
 
