@@ -59,16 +59,18 @@ Replace <challenge-name> with the name of the desired challenge with dash instea
 
 ## Challenges
 
-Below is a list of challenges and their corresponding files in this repository:
+Below is a table of challenges and their corresponding files in this repository:
 
-- Challenge 00, Hello Ethernaut: [Contract](./contracts/00HelloEthernaut.sol), [Explanation](./docs/00-hello-ethernaut.md), [Solution JS Code](./test/00-hello-ethernaut.test.js), [Solution Solidity Code](./contracts/00HelloEthernautSolution.sol)
-- Challenge 01, Fallback: [Contract](./contracts/01Fallback.sol), [Explanation](./docs/01-fallback.md), [Solution JS Code](./test/01-fallback.test.js), [Solution Solidity Code](./contracts/01FallbackSolution.sol)
-- Challenge 02, Fallout: [Contract](./contracts/02Fallout.sol), [Explanation](./docs/02-fallout.md), [Solution JS Code](./test/02-fallout.test.js), [Solution Solidity Code](./contracts/02FalloutSolution.sol)
-- Challenge 03, Coin Flip: [Contract](./contracts/03CoinFlip.sol), [Explanation](./docs/03-coin-flip.md), [Solution JS Code](./test/03-coin-flip.test.js), [Solution Solidity Code](./contracts/03CoinFlipSolution.sol)
-- Challenge 04, Telephone: [Contract](./contracts/04Telephone.sol), [Explanation](./docs/04-telephone.md), [Solution JS Code](./test/04-telephone.test.js), [Solution Solidity Code](./contracts/04TelephoneSolution.sol)
-- Challenge 05, Token: [Contract](./contracts/05Token.sol), [Explanation](./docs/05-token.md), [Solution JS Code](./test/05-token.test.js), [Solution Solidity Code](./contracts/05TokenSolution.sol)
-- Challenge 06, Delegation: [Contract](./contracts/06Delegation.sol), [Explanation](./docs/06-delegation.md), [Solution JS Code](./test/06-delegation.test.js), [Solution Solidity Code](./contracts/06DelegationSolution.sol)
-- Challenge 07, Force: [Contract](./contracts/07Force.sol), [Explanation](./docs/07-force.md, [Solution JS Code](./test/07-force.test.js), [Solution Solidity Code](./contracts/07ForceSolution.sol)
+| Challenge Number |  Challenge Name |                Source Contract               |                Documentation                |                Solution Javascrip Code                | Solution Solidity Code                                             |
+|:----------------:|:---------------:|:--------------------------------------------:|:-------------------------------------------:|:-----------------------------------------------------:|:------------------------------------------------------------------:|
+|        00        | Hello Ethernaut | [Contract](./contracts/00HelloEthernaut.sol) | [Explanation](./docs/00-hello-ethernaut.md) | [Solution JS Code](./test/00-hello-ethernaut.test.js) | [Solution Solidity Code](./contracts/00HelloEthernautSolution.sol) |
+|        01        | Fallback        | [Contract](./contracts/01Fallback.sol)       | [Explanation](./docs/01-fallback.md)        | [Solution JS Code](./test/01-fallback.test.js)        | [Solution Solidity Code](./contracts/01FallbackSolution.sol)       |
+|        02        | Fallout         | [Contract](./contracts/02Fallout.sol)        | [Explanation](./docs/02-fallout.md)         | [Solution JS Code](./test/02-fallout.test.js)         | [Solution Solidity Code](./contracts/02FalloutSolution.sol)        |
+|        03        | Coin Flip       | [Contract](./contracts/03CoinFlip.sol)       | [Explanation](./docs/03-coin-flip.md)       | [Solution JS Code](./test/03-coin-flip.test.js)       | [Solution Solidity Code](./contracts/03CoinFlipSolution.sol)       |
+|        04        | Telephone       | [Contract](./contracts/04Telephone.sol)      | [Explanation](./docs/04-telephone.md)       | [Solution JS Code](./test/04-telephone.test.js)       | [Solution Solidity Code](./contracts/04TelephoneSolution.sol)      |
+|        05        | Token           | [Contract](./contracts/05Token.sol)          | [Explanation](./docs/05-token.md)           | [Solution JS Code](./test/05-token.test.js)           | [Solution Solidity Code](./contracts/05TokenSolution.sol)          |
+|        06        | Delegation      | [Contract](./contracts/06Delegation.sol)     | [Explanation](./docs/06-delegation.md)      | [Solution JS Code](./test/06-delegation.test.js)      | [Solution Solidity Code](./contracts/06DelegationSolution.sol)     |
+|        07        | Force           | [Contract](./contracts/07Force.sol)          | [Explanation](./docs/07-force.md)           | [Solution JS Code](./test/07-force.test.js)           | [Solution Solidity Code](./contracts/07ForceSolution.sol)          |
 
 Feel free to explore the code for each challenge and run the tests to verify the solutions.
 
