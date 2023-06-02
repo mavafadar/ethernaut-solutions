@@ -65,7 +65,8 @@ Below is a list of challenges and their corresponding files in this repository:
 - Challenge 01, Fallback: [Contract](./contracts/01Fallback.sol), [Explanation](./docs/01-fallback.md), [Solution JS Code](./test/01-fallback.test.js), [Solution Solidity Code](./contracts/01FallbackSolution.sol)
 - Challenge 02, Fallout: [Contract](./contracts/02Fallout.sol), [Explanation](./docs/02-fallout.md), [Solution JS Code](./test/02-fallout.test.js), [Solution Solidity Code](./contracts/02FalloutSolution.sol)
 - Challenge 03, Coin Flip: [Contract](./contracts/03CoinFlip.sol), [Explanation](./docs/03-coin-flip.md), [Solution JS Code](./test/03-coin-flip.test.js), [Solution Solidity Code](./contracts/03CoinFlipSolution.sol)
-- Challenge 04, Telephone: [Contract](./contracts/04Telephone.sol), [Explanation](./docs/03-coin-flip.md), [Solution JS Code](./test/04-telephone.test.js), [Solution Solidity Code](./contracts/04TelephoneSolution.sol)
+- Challenge 04, Telephone: [Contract](./contracts/04Telephone.sol), [Explanation](./docs/04-telephone.md), [Solution JS Code](./test/04-telephone.test.js), [Solution Solidity Code](./contracts/04TelephoneSolution.sol)
+- Challenge 05, Token: [Contract](./contracts/05Token.sol), [Explanation](./docs/05-token.md), [Solution JS Code](./test/05-token.test.js), [Solution Solidity Code](./contracts/05TokenSolution.sol)
 
 Feel free to explore the code for each challenge and run the tests to verify the solutions.
 

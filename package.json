@@ -11,7 +11,8 @@
     "fallback": "yarn hardhat test ./test/01-fallback.test.js",
     "fallout": "yarn hardhat test ./test/02-fallout.test.js",
     "coin-flip": "yarn hardhat test ./test/03-coin-flip.test.js",
-    "telephone": "yarn hardhat test ./test/04-telephone.test.js"
+    "telephone": "yarn hardhat test ./test/04-telephone.test.js",
+    "token": "yarn hardhat test ./test/05-token.test.js"
   },
   "devDependencies": {
     "@chainlink/contracts": "0.4.1",
