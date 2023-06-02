@@ -7,7 +7,7 @@ const { assert } = require("chai")
 */
 const CONTRACT_ADDRESS = "0xBC6f5919709Ce3c151D8642884197A323D6cEb1D"
 
-describe("06 Force", function () {
+describe("07 Force", function () {
     let player, challengeContract
     const valueToDeposit = "1"
 
