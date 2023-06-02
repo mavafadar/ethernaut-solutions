@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-import "./02CoinFlip.sol";
+import "./03CoinFlip.sol";
 
 error WrongPrediction();
 

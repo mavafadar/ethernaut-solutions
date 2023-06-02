@@ -8,7 +8,9 @@ const PRIVATE_KEY = process.env.PRIVATE_KEY || "0xkey"
 
 /** @type import('hardhat/config').HardhatUserConfig */
 module.exports = {
-    solidity: "0.8.18",
+    solidity: {
+        compilers: [{ version: "0.8.18" }, { version: "0.6.6" }],
+    },
     defaultNetwork: "sepolia",
     networks: {
         sepolia: {

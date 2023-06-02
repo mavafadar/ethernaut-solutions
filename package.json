@@ -9,7 +9,8 @@
   "scripts": {
     "hello-ethernaut": "yarn hardhat test ./test/00-hello-ethernaut.test.js",
     "fallback": "yarn hardhat test ./test/01-fallback.test.js",
-    "coin-flip": "yarn hardhat test ./test/02-coin-flip.test.js"
+    "fallout": "yarn hardhat test ./test/02-fallout.test.js",
+    "coin-flip": "yarn hardhat test ./test/03-coin-flip.test.js"
   },
   "devDependencies": {
     "@chainlink/contracts": "0.4.1",
@@ -18,6 +19,7 @@
     "@nomicfoundation/hardhat-toolbox": "^2.0.2",
     "@nomiclabs/hardhat-ethers": "npm:hardhat-deploy-ethers",
     "@nomiclabs/hardhat-etherscan": "^3.1.7",
+    "@openzeppelin/contracts": "^4.9.0",
     "@typechain/ethers-v5": "10.1.0",
     "@typechain/hardhat": "6.1.2",
     "@types/chai": "4.2.0",

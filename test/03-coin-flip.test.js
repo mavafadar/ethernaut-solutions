@@ -5,9 +5,9 @@ const { assert } = require("chai")
     Enter the contract address below.
     Use `await contract.address in the console to get the address.
 */
-const CONTRACT_ADDRESS = "0xb8A01c0e3CFC859811B835B7C32DbBc992C3caa3"
+const CONTRACT_ADDRESS = "0xF950193F800964DC135532f94c56D71CbDC90AB2"
 
-describe("02 Coin Flip", function () {
+describe("03 Coin Flip", function () {
     let player, challengeContract, solutionContract
 
     before(async function () {

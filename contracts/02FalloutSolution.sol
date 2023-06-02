@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.0;
+pragma solidity ^0.6.0;
 
-import "./01Fallback.sol";
+import "./02Fallout.sol";
 
-contract FallbackSolution {
+contract FalloutSolution {
     /* 
         This challenge does not have
         any solidity code to be solved
