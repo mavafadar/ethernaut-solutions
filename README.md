@@ -63,7 +63,9 @@ Below is a list of challenges and their corresponding files in this repository:
 
 - Challenge 00, Hello Ethernaut: [Contract](./contracts/00HelloEthernaut.sol), [Explanation](./docs/00-hello-ethernaut.md), [Solution JS Code](./test/00-hello-ethernaut.test.js), [Solution Solidity Code](./contracts/00HelloEthernautSolution.sol)
 - Challenge 01, Fallback: [Contract](./contracts/01Fallback.sol), [Explanation](./docs/01-fallback.md), [Solution JS Code](./test/01-fallback.test.js), [Solution Solidity Code](./contracts/01FallbackSolution.sol)
-- Challenge 02, Coin Flip: [Contract](./contracts/02CoinFlip.sol), [Explanation](./docs/02-coin-flip.md), [Solution JS Code](./test/02-coin-flip.test.js), [Solution Solidity Code](./contracts/02CoinFlipSolution.sol)
+- Challenge 02, Fallout: [Contract](./contracts/02Fallout.sol), [Explanation](./docs/02-fallout.md), [Solution JS Code](./test/02-fallout.test.js), [Solution Solidity Code](./contracts/02FalloutSolution.sol)
+- Challenge 03, Coin Flip: [Contract](./contracts/03CoinFlip.sol), [Explanation](./docs/03-coin-flip.md), [Solution JS Code](./test/03-coin-flip.test.js), [Solution Solidity Code](./contracts/03CoinFlipSolution.sol)
+- Challenge 04, Telephone: [Contract](./contracts/04Telephone.sol), [Explanation](./docs/03-coin-flip.md), [Solution JS Code](./test/04-telephone.test.js), [Solution Solidity Code](./contracts/04TelephoneSolution.sol)
 
 Feel free to explore the code for each challenge and run the tests to verify the solutions.
 

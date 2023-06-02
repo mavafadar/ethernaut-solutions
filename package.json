@@ -10,7 +10,8 @@
     "hello-ethernaut": "yarn hardhat test ./test/00-hello-ethernaut.test.js",
     "fallback": "yarn hardhat test ./test/01-fallback.test.js",
     "fallout": "yarn hardhat test ./test/02-fallout.test.js",
-    "coin-flip": "yarn hardhat test ./test/03-coin-flip.test.js"
+    "coin-flip": "yarn hardhat test ./test/03-coin-flip.test.js",
+    "telephone": "yarn hardhat test ./test/04-telephone.test.js"
   },
   "devDependencies": {
     "@chainlink/contracts": "0.4.1",

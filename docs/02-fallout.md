@@ -4,9 +4,9 @@
 
 Claim ownership of the contract below to complete this level.
 
- Things that might help:
+Things that might help:
 
-- Solidity Remix IDE
+-   Solidity Remix IDE
 
 ## Challenge Code
 
@@ -14,58 +14,55 @@ Claim ownership of the contract below to complete this level.
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.6.0;
 
-import 'openzeppelin-contracts-06/math/SafeMath.sol';
+import "./utils/SafeMath.sol";
 
 contract Fallout {
-  
-  using SafeMath for uint256;
-  mapping (address => uint) allocations;
-  address payable public owner;
+    using SafeMath for uint256;
+    mapping(address => uint) allocations;
+    address payable public owner;
 
-  function Fal1out() public payable {
-    owner = msg.sender;
-    allocations[owner] = msg.value;
-  }
+    /* constructor */
+    function Fal1out() public payable {
+        owner = msg.sender;
+        allocations[owner] = msg.value;
+    }
 
-  modifier onlyOwner {
-	        require(
-	            msg.sender == owner,
-	            "caller is not the owner"
-	        );
-	        _;
-	    }
+    modifier onlyOwner() {
+        require(msg.sender == owner, "caller is not the owner");
+        _;
+    }
 
-  function allocate() public payable {
-    allocations[msg.sender] = allocations[msg.sender].add(msg.value);
-  }
+    function allocate() public payable {
+        allocations[msg.sender] = allocations[msg.sender].add(msg.value);
+    }
 
-  function sendAllocation(address payable allocator) public {
-    require(allocations[allocator] > 0);
-    allocator.transfer(allocations[allocator]);
-  }
+    function sendAllocation(address payable allocator) public {
+        require(allocations[allocator] > 0);
+        allocator.transfer(allocations[allocator]);
+    }
 
-  function collectAllocations() public onlyOwner {
-    msg.sender.transfer(address(this).balance);
-  }
+    function collectAllocations() public onlyOwner {
+        msg.sender.transfer(address(this).balance);
+    }
 
-  function allocatorBalance(address allocator) public view returns (uint) {
-    return allocations[allocator];
-  }
+    function allocatorBalance(address allocator) public view returns (uint) {
+        return allocations[allocator];
+    }
 }
 ```
 
 ## Challenge Solution Walkthrough
 
-In previous versions of the Solidity compiler, the constructor function was defined with the same name as the contract's name. However, in the given contract, there is a typo in the constructor function name. The function `Fal1out()` should actually be `Fallout()` to serve as the constructor. To solve this challenge, you need to call the `Fal1out()` function. Due to the typo, this function can be called multiple times, allowing anyone to become the owner of the contract.  
+In previous versions of the Solidity compiler, the constructor function was defined with the same name as the contract's name. However, in the given contract, there is a typo in the constructor function name. The function `Fal1out()` should actually be `Fallout()` to serve as the constructor. To solve this challenge, you need to call the `Fal1out()` function. Due to the typo, this function can be called multiple times, allowing anyone to become the owner of the contract.
 
 ```solidity
 function Fal1out() public payable {
-  owner = msg.sender;
-  allocations[owner] = msg.value;
+    owner = msg.sender;
+    allocations[owner] = msg.value;
 }
 ```
 
-To solve the challenge, open the console and execute the following command: 
+To solve the challenge, open the console and execute the following command:
 
 ```javascript
 > await contract.Fal1out()
