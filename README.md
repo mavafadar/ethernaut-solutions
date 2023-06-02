@@ -68,6 +68,7 @@ Below is a list of challenges and their corresponding files in this repository:
 - Challenge 04, Telephone: [Contract](./contracts/04Telephone.sol), [Explanation](./docs/04-telephone.md), [Solution JS Code](./test/04-telephone.test.js), [Solution Solidity Code](./contracts/04TelephoneSolution.sol)
 - Challenge 05, Token: [Contract](./contracts/05Token.sol), [Explanation](./docs/05-token.md), [Solution JS Code](./test/05-token.test.js), [Solution Solidity Code](./contracts/05TokenSolution.sol)
 - Challenge 06, Delegation: [Contract](./contracts/06Delegation.sol), [Explanation](./docs/06-delegation.md), [Solution JS Code](./test/06-delegation.test.js), [Solution Solidity Code](./contracts/06DelegationSolution.sol)
+- Challenge 07, Force: [Contract](./contracts/07Force.sol), [Explanation](./docs/07-force.md, [Solution JS Code](./test/07-force.test.js), [Solution Solidity Code](./contracts/07ForceSolution.sol)
 
 Feel free to explore the code for each challenge and run the tests to verify the solutions.
 

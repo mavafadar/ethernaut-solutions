@@ -13,7 +13,8 @@
     "coin-flip": "yarn hardhat test ./test/03-coin-flip.test.js",
     "telephone": "yarn hardhat test ./test/04-telephone.test.js",
     "token": "yarn hardhat test ./test/05-token.test.js",
-    "delegation": "yarn hardhat test ./test/06-delegation.test.js"
+    "delegation": "yarn hardhat test ./test/06-delegation.test.js",
+    "force": "yarn hardhat test ./test/07-force.test.js"
   },
   "devDependencies": {
     "@chainlink/contracts": "0.4.1",
