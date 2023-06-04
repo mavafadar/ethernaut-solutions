@@ -21,7 +21,7 @@ describe("04 Telephone", function () {
             await ethers.getContractFactory("TelephoneSolution", player)
         ).deploy(CONTRACT_ADDRESS)
         const ownerBefore = await challengeContract.owner()
-        await assert.notEqual(ownerBefore.toString(), player.address.toString())
+        assert.notEqual(ownerBefore.toString(), player.address.toString())
     })
 
     it("Execution", async function () {
@@ -31,6 +31,6 @@ describe("04 Telephone", function () {
 
     after(async function () {
         const ownerAfter = await challengeContract.owner()
-        await assert.equal(ownerAfter.toString(), player.address.toString())
+        assert.equal(ownerAfter.toString(), player.address.toString())
     })
 })

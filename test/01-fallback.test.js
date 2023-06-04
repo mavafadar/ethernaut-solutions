@@ -18,12 +18,9 @@ describe("01 Fallback", function () {
             player
         )
         const ownerBefore = await challengeContract.owner()
-        await assert.notEqual(ownerBefore.toString(), player.address.toString())
+        assert.notEqual(ownerBefore.toString(), player.address.toString())
         const ownerBalance = await challengeContract.contributions(ownerBefore)
-        await assert.equal(
-            ownerBalance.toString(),
-            ethers.utils.parseEther("1000")
-        )
+        assert.equal(ownerBalance.toString(), ethers.utils.parseEther("1000"))
     })
 
     it("Execution", async function () {
@@ -40,10 +37,10 @@ describe("01 Fallback", function () {
 
     after(async function () {
         const ownerAfter = await challengeContract.owner()
-        await assert.equal(ownerAfter.toString(), player.address.toString())
+        assert.equal(ownerAfter.toString(), player.address.toString())
         const txBalance = await ethers.provider.getBalance(
             challengeContract.address
         )
-        await assert.equal(txBalance.toString(), "0")
+        assert.equal(txBalance.toString(), "0")
     })
 })

@@ -21,7 +21,7 @@ describe("03 Coin Flip", function () {
             await ethers.getContractFactory("CoinFlipSolution", player)
         ).deploy(CONTRACT_ADDRESS)
         const consecutiveWinsBefore = await challengeContract.consecutiveWins()
-        await assert.equal(consecutiveWinsBefore.toString(), "0")
+        assert.equal(consecutiveWinsBefore.toString(), "0")
     })
 
     it("Execution", async function () {
@@ -37,6 +37,6 @@ describe("03 Coin Flip", function () {
 
     after(async function () {
         const consecutiveWinsAfter = await challengeContract.consecutiveWins()
-        await assert.equal(consecutiveWinsAfter.toString(), "10")
+        assert.equal(consecutiveWinsAfter.toString(), "10")
     })
 })

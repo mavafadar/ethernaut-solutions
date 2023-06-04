@@ -18,7 +18,7 @@ describe("02 Fallout", function () {
             player
         )
         const ownerBefore = await challengeContract.owner()
-        await assert.notEqual(ownerBefore.toString(), player.address.toString())
+        assert.notEqual(ownerBefore.toString(), player.address.toString())
     })
 
     it("Execution", async function () {
@@ -28,6 +28,6 @@ describe("02 Fallout", function () {
 
     after(async function () {
         const ownerAfter = await challengeContract.owner()
-        await assert.equal(ownerAfter.toString(), player.address.toString())
+        assert.equal(ownerAfter.toString(), player.address.toString())
     })
 })

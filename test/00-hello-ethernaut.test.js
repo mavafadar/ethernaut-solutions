@@ -21,7 +21,7 @@ describe("00 Hello Ethernaut", function () {
             await ethers.getContractFactory("HelloEthernautSolution", player)
         ).deploy(CONTRACT_ADDRESS)
         const clearedBefore = await challengeContract.getCleared()
-        await assert.equal(clearedBefore, false)
+        assert.equal(clearedBefore, false)
     })
 
     it("Execution", async function () {
@@ -31,6 +31,6 @@ describe("00 Hello Ethernaut", function () {
 
     after(async function () {
         const clearedAfter = await challengeContract.getCleared()
-        await assert.equal(clearedAfter, true)
+        assert.equal(clearedAfter, true)
     })
 })

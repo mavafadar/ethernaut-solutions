@@ -72,6 +72,7 @@ Below is a table of challenges and their corresponding files in this repository:
 |        06        | Delegation      | [Contract](./contracts/06Delegation.sol)     | [Explanation](./docs/06-delegation.md)      | [Solution JS Code](./test/06-delegation.test.js)      | [Solution Solidity Code](./contracts/06DelegationSolution.sol)     |
 |        07        | Force           | [Contract](./contracts/07Force.sol)          | [Explanation](./docs/07-force.md)           | [Solution JS Code](./test/07-force.test.js)           | [Solution Solidity Code](./contracts/07ForceSolution.sol)          |
 |        08        | Vault           | [Contract](./contracts/08Vault.sol)          | [Explanation](./docs/08-vault.md)           | [Solution JS Code](./test/08-vault.test.js)           | [Solution Solidity Code](./contracts/08VaultSolution.sol)          |
+|        09        | King            | [Contract](./contracts/09King.sol)           | [Explanation](./docs/09-king.md)            | [Solution JS Code](./test/09-king.test.js)            | [Solution Solidity Code](./contracts/09KingSolution.sol)           |
 
 Feel free to explore the code for each challenge and run the tests to verify the solutions.
 

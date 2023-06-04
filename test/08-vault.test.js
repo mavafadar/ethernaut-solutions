@@ -18,7 +18,7 @@ describe("08 Vault", function () {
             player
         )
         const isLockedBefore = await challengeContract.locked()
-        await assert.equal(isLockedBefore.toString(), true.toString())
+        assert.equal(isLockedBefore.toString(), true.toString())
     })
 
     it("Execution", async function () {
@@ -32,6 +32,6 @@ describe("08 Vault", function () {
 
     after(async function () {
         const isLockedAfter = await challengeContract.locked()
-        await assert.equal(isLockedAfter.toString(), false.toString())
+        assert.equal(isLockedAfter.toString(), false.toString())
     })
 })

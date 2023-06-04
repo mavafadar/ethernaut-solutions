@@ -19,7 +19,7 @@ describe("05 Token", function () {
             player
         )
         const balanceBefore = await challengeContract.balanceOf(player.address)
-        await assert.equal(balanceBefore.toString(), "20")
+        assert.equal(balanceBefore.toString(), "20")
     })
 
     it("Execution", async function () {
@@ -32,6 +32,6 @@ describe("05 Token", function () {
 
     after(async function () {
         const balanceAfter = await challengeContract.balanceOf(player.address)
-        await expect(Number(balanceAfter)).to.be.greaterThan(Number("20"))
+        expect(Number(balanceAfter)).to.be.greaterThan(Number("20"))
     })
 })
