@@ -1,4 +1,4 @@
-# Hello Ethernaut
+# Token
 
 ## Challenge Description
 

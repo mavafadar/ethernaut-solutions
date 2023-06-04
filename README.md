@@ -75,6 +75,7 @@ Below is a table of challenges and their corresponding files in this repository:
 |        09        | King            | [Contract](./contracts/09King.sol)           | [Explanation](./docs/09-king.md)            | [Solution JS Code](./test/09-king.test.js)            | [Solution Solidity Code](./contracts/09KingSolution.sol)           |
 |        10        | Reentrancy      | [Contract](./contracts/10Reentrancy.sol)     | [Explanation](./docs/10-reentrancy.md)      | [Solution JS Code](./test/10-reentrancy.test.js)      | [Solution Solidity Code](./contracts/10ReentrancySolution.sol)     |
 |        11        | Elevator        | [Contract](./contracts/11Elevator.sol)       | [Explanation](./docs/11-elevator.md)        | [Solution JS Code](./test/11-elevator.test.js)        | [Solution Solidity Code](./contracts/11ElevatorSolution.sol)       |
+|        12        | Privacy         | [Contract](./contracts/12Privacy.sol)        | [Explanation](./docs/12-privacy.md)         | [Solution JS Code](./test/12-privacy.test.js)         | [Solution Solidity Code](./contracts/12PrivacySolution.sol)        |
 
 Feel free to explore the code for each challenge and run the tests to verify the solutions.
 

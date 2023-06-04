@@ -1,4 +1,4 @@
-# Hello Ethernaut
+# Coin Flip
 
 ## Challenge Description
 

@@ -1,16 +1,16 @@
-# Hello Ethernaut
+# Reentrancy
 
 ## Challenge Description
 
 The goal of this level is for you to steal all the funds from the contract.
 
- Things that might help:
+Things that might help:
 
-- Untrusted contracts can execute code where you least expect it.
-- Fallback methods
-- Throw/revert bubbling
-- Sometimes the best way to attack a contract is with another contract.
-- See the ["?"](https://ethernaut.openzeppelin.com/help) page above, section "Beyond the console"
+-   Untrusted contracts can execute code where you least expect it.
+-   Fallback methods
+-   Throw/revert bubbling
+-   Sometimes the best way to attack a contract is with another contract.
+-   See the ["?"](https://ethernaut.openzeppelin.com/help) page above, section "Beyond the console"
 
 ## Challenge Code
 
@@ -18,7 +18,7 @@ The goal of this level is for you to steal all the funds from the contract.
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.6.12;
 
-import 'openzeppelin-contracts-06/math/SafeMath.sol';
+import "openzeppelin-contracts-06/math/SafeMath.sol";
 
 contract Reentrance {
     using SafeMath for uint256;
@@ -34,7 +34,7 @@ contract Reentrance {
 
     function withdraw(uint _amount) public {
         if (balances[msg.sender] >= _amount) {
-            (bool result, ) = msg.sender.call{value: _amount}("");
+            (bool result, ) = msg.sender.call{ value: _amount }("");
             if (result) {
                 _amount;
             }
@@ -72,7 +72,7 @@ contract ReentranceSolution {
     function solveChallenge() public payable {
         valueToDonate = msg.value;
         totalValue = address(reentrance).balance;
-        reentrance.donate{value: valueToDonate}(address(this));
+        reentrance.donate{ value: valueToDonate }(address(this));
         reentrance.withdraw(valueToDonate);
     }
 
@@ -104,11 +104,9 @@ In order to prevent re-entrancy attacks when moving funds out of your contract, 
 
 `transfer` and `send` are no longer recommended solutions as they can potentially break contracts after the Istanbul hard fork [Source 1](https://diligence.consensys.net/blog/2019/09/stop-using-soliditys-transfer-now/) [Source 2](https://forum.openzeppelin.com/t/reentrancy-after-istanbul/1742).
 
-Always assume that the receiver of the funds you are sending can be another contract, not just a regular address. Hence, it can execute code in its payable fallback method and *re-enter* your contract, possibly messing up your state/logic.
+Always assume that the receiver of the funds you are sending can be another contract, not just a regular address. Hence, it can execute code in its payable fallback method and _re-enter_ your contract, possibly messing up your state/logic.
 
 Re-entrancy is a common attack. You should always be prepared for it!
-
- 
 
 #### The DAO Hack
 

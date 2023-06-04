@@ -1,4 +1,4 @@
-# Hello Ethernaut
+# Telephone
 
 ## Challenge Description
 
@@ -82,7 +82,7 @@ function transfer(address _to, uint _value) {
 1. Attacker gets victim to send funds to a malicious contract that calls the transfer function of the token contract, e.g.
 
 ```solidity
-function () payable {
+function() payable {
     token.transfer(attackerAddress, 10000);
 }
 ```

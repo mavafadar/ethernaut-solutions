@@ -1,4 +1,4 @@
-# Hello Ethernaut
+# King
 
 ## Challenge Description
 
@@ -36,7 +36,6 @@ contract King {
         return king;
     }
 }
-
 ```
 
 ## Challenge Solution Walkthrough
@@ -62,7 +61,7 @@ contract KingSolution {
     }
 
     function solveChallenge() public payable {
-        (bool success, ) = payable(kingContract).call{value: msg.value}("");
+        (bool success, ) = payable(kingContract).call{ value: msg.value }("");
         if (success == false) revert PaymentFailed();
     }
 

@@ -1,4 +1,4 @@
-# Hello Ethernaut
+# Fallback
 
 ## Challenge Description
 
