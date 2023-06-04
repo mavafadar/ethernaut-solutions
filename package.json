@@ -16,7 +16,8 @@
     "delegation": "yarn hardhat test ./test/06-delegation.test.js",
     "force": "yarn hardhat test ./test/07-force.test.js",
     "vault": "yarn hardhat test ./test/08-vault.test.js",
-    "king": "yarn hardhat test ./test/09-king.test.js"
+    "king": "yarn hardhat test ./test/09-king.test.js",
+    "reentrancy": "yarn hardhat test ./test/10-reentrancy.test.js"
   },
   "devDependencies": {
     "@chainlink/contracts": "0.4.1",
