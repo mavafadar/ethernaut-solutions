@@ -19,7 +19,8 @@
     "king": "yarn hardhat test ./test/09-king.test.js",
     "reentrancy": "yarn hardhat test ./test/10-reentrancy.test.js",
     "elevator": "yarn hardhat test ./test/11-elevator.test.js",
-    "privacy": "yarn hardhat test ./test/12-privacy.test.js"
+    "privacy": "yarn hardhat test ./test/12-privacy.test.js",
+    "gatekeeper-one": "yarn hardhat test ./test/13-gatekeeper-one.test.js"
   },
   "devDependencies": {
     "@chainlink/contracts": "0.4.1",

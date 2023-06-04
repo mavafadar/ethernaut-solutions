@@ -8,13 +8,13 @@ Unlock this contract to beat the level.
 
 Things that might help:
 
-- Understanding how storage works
-- Understanding how parameter parsing works
-- Understanding how casting works
+-   Understanding how storage works
+-   Understanding how parameter parsing works
+-   Understanding how casting works
 
 Tips:
 
-- Remember that metamask is just a commodity. Use another tool if it is presenting problems. Advanced gameplay could involve using remix, or your own web3 provider.
+-   Remember that metamask is just a commodity. Use another tool if it is presenting problems. Advanced gameplay could involve using remix, or your own web3 provider.
 
 ## Challenge Code
 
@@ -59,24 +59,26 @@ Here's an example of how to find and unlock the contract using the `getStorageAt
 
 ```javascript
 // Find the password
-const password = await web3.eth.getStorageAt(contract.address, 5);
+const password = await web3.eth.getStorageAt(contract.address, 5)
 
 // Slice the password to obtain the leftmost 16 bytes
-const slicedPassword = password.slice(0, 34);
+const slicedPassword = password.slice(0, 34)
 
 // Unlock the contract using the retrieved password
-await contract.unlock(slicedPassword);
+await contract.unlock(slicedPassword)
 
 // Verify if the contract is unlocked
-const isUnlocked = await contract.locked();
-console.log("Contract unlocked:", !isUnlocked);
+const isUnlocked = await contract.locked()
+console.log("Contract unlocked:", !isUnlocked)
 ```
 
 In the above code, we retrieve the value stored in the storage slot 5 (which corresponds to `data[2]`) using `web3.eth.getStorageAt()`. We then slice the retrieved password to obtain the leftmost 16 bytes.
 
 After obtaining the password, we call the `unlock()` function of the contract, passing the sliced password as an argument. Finally, we verify if the contract is unlocked by checking the value of the `locked` state variable.
 
-If the contract is successfully unlocked, the output will show `Contract unlocked: true`. Congratulations! You have successfully completed the challenge.
+If the contract is successfully unlocked, the output will show `Contract unlocked: true`.
+
+Congratulations! You have successfully completed the challenge.
 
 ## Challenge Description After Solving
 

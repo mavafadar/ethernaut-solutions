@@ -76,6 +76,7 @@ Below is a table of challenges and their corresponding files in this repository:
 |        10        | Reentrancy      | [Contract](./contracts/10Reentrancy.sol)     | [Explanation](./docs/10-reentrancy.md)      | [Solution JS Code](./test/10-reentrancy.test.js)      | [Solution Solidity Code](./contracts/10ReentrancySolution.sol)     |
 |        11        | Elevator        | [Contract](./contracts/11Elevator.sol)       | [Explanation](./docs/11-elevator.md)        | [Solution JS Code](./test/11-elevator.test.js)        | [Solution Solidity Code](./contracts/11ElevatorSolution.sol)       |
 |        12        | Privacy         | [Contract](./contracts/12Privacy.sol)        | [Explanation](./docs/12-privacy.md)         | [Solution JS Code](./test/12-privacy.test.js)         | [Solution Solidity Code](./contracts/12PrivacySolution.sol)        |
+|        13        | Gatekeeper One  | [Contract](./contracts/13GatekeeperOne.sol)  | [Explanation](./docs/13-gatekeeper-one.md)  | [Solution JS Code](./test/13-gatekeeper-one.test.js)  | [Solution Solidity Code](./contracts/13GatekeeperOneSolution.sol)  |
 
 Feel free to explore the code for each challenge and run the tests to verify the solutions.
 
