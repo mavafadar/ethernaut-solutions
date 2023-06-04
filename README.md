@@ -78,6 +78,7 @@ Below is a table of challenges and their corresponding files in this repository:
 |        12        | Privacy         | [Contract](./contracts/12Privacy.sol)        | [Explanation](./docs/12-privacy.md)         | [Solution JS Code](./test/12-privacy.test.js)         | [Solution Solidity Code](./contracts/12PrivacySolution.sol)        |
 |        13        | Gatekeeper One  | [Contract](./contracts/13GatekeeperOne.sol)  | [Explanation](./docs/13-gatekeeper-one.md)  | [Solution JS Code](./test/13-gatekeeper-one.test.js)  | [Solution Solidity Code](./contracts/13GatekeeperOneSolution.sol)  |
 |        14        | Gatekeeper Two  | [Contract](./contracts/14GatekeeperTwo.sol)  | [Explanation](./docs/14-gatekeeper-two.md)  | [Solution JS Code](./test/14-gatekeeper-two.test.js)  | [Solution Solidity Code](./contracts/14GatekeeperTwoSolution.sol)  |
+|        15        | Naught Coin     | [Contract](./contracts/15NaughtCoin.sol)     | [Explanation](./docs/15-naught-coin.md)     | [Solution JS Code](./test/15-naught-coin.test.js)     | [Solution Solidity Code](./contracts/15NaughtCoinSolution.sol)     |
 
 Feel free to explore the code for each challenge and run the tests to verify the solutions.
 
