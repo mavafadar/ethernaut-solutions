@@ -6,12 +6,12 @@ This contract utilizes a library to store two different times for two different 
 
 The goal of this level is for you to claim ownership of the instance you are given.
 
- Things that might help
+Things that might help
 
-- Look into Solidity's documentation on the `delegatecall` low level function, how it works, how it can be used to delegate operations to on-chain. libraries, and what implications it has on execution scope.
-- Understanding what it means for `delegatecall` to be context-preserving.
-- Understanding how storage variables are stored and accessed.
-- Understanding how casting works between different data types.
+-   Look into Solidity's documentation on the `delegatecall` low level function, how it works, how it can be used to delegate operations to on-chain. libraries, and what implications it has on execution scope.
+-   Understanding what it means for `delegatecall` to be context-preserving.
+-   Understanding how storage variables are stored and accessed.
+-   Understanding how casting works between different data types.
 
 ## Challenge Code
 
@@ -60,7 +60,6 @@ contract LibraryContract {
 
 ## Challenge Solution Walkthrough
 
-
 To exploit the contract and become the owner, we can take advantage of the delegate call mechanism and manipulate the memory layout. By executing specific functions, we can modify the contract's state and assign ourselves as the owner.
 
 Here's how we can achieve this:
@@ -106,7 +105,7 @@ After executing this step, we will become the owner of the `Preservation` contra
 < true
 ```
 
-The output should indicate that we are now the owner of the contract. 
+The output should indicate that we are now the owner of the contract.
 
 Congratulations! You have successfully completed the challenge.
 
