@@ -24,7 +24,8 @@
     "gatekeeper-two": "yarn hardhat test ./test/14-gatekeeper-two.test.js",
     "naught-coin": "yarn hardhat test ./test/15-naught-coin.test.js",
     "preservation": "yarn hardhat test ./test/16-preservation.test.js",
-    "recovery": "yarn hardhat test ./test/17-recovery.test.js"
+    "recovery": "yarn hardhat test ./test/17-recovery.test.js",
+    "magic-number": "yarn hardhat test ./test/18-magic-number.test.js"
   },
   "devDependencies": {
     "@chainlink/contracts": "0.4.1",
@@ -38,6 +39,7 @@
     "@typechain/hardhat": "6.1.2",
     "@types/chai": "4.2.0",
     "@types/mocha": "^10.0.1",
+    "bignumber.js": "^9.1.1",
     "chai": "^4.3.7",
     "dotenv": "^16.0.3",
     "ethers": "^5.4",
