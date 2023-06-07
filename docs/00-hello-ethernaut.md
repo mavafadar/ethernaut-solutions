@@ -73,20 +73,16 @@ This level walks you through the very basics of how to play the game.
 
 **Tip: don't forget that you can always look in the contract's ABI!**
 
-
-
 ## Challenge Code
 
 [NOT GIVEN]
-
-
 
 ## Challenge Solution Walkthrough
 
 In this challenge, we need to interact with a contract and follow a series of instructions to complete it. Let's walk through the steps:
 
 1. Open the console to interact with the contract.
-2. Use the command `await contract.info()` to get information about the challenge: 
+2. Use the command `await contract.info()` to get information about the challenge:
 
 ```javascript
 > await contract.info()
@@ -180,8 +176,6 @@ In this challenge, we need to interact with a contract and follow a series of in
 
 Congratulations! You have successfully completed the challenge.
 
-
-
 ## Challenge Description After Solving
 
 Congratulations! You have completed the tutorial. Have a look at the Solidity code for the contract you just interacted with below.
@@ -195,49 +189,54 @@ Godspeed!!
 pragma solidity ^0.8.0;
 
 contract Instance {
+    string public password;
+    uint8 public infoNum = 42;
+    string public theMethodName = "The method name is method7123949.";
+    bool private cleared = false;
 
-  string public password;
-  uint8 public infoNum = 42;
-  string public theMethodName = 'The method name is method7123949.';
-  bool private cleared = false;
-
-  // constructor
-  constructor(string memory _password) {
-    password = _password;
-  }
-
-  function info() public pure returns (string memory) {
-    return 'You will find what you need in info1().';
-  }
-
-  function info1() public pure returns (string memory) {
-    return 'Try info2(), but with "hello" as a parameter.';
-  }
-
-  function info2(string memory param) public pure returns (string memory) {
-    if(keccak256(abi.encodePacked(param)) == keccak256(abi.encodePacked('hello'))) {
-      return 'The property infoNum holds the number of the next info method to call.';
+    // constructor
+    constructor(string memory _password) {
+        password = _password;
     }
-    return 'Wrong parameter.';
-  }
 
-  function info42() public pure returns (string memory) {
-    return 'theMethodName is the name of the next method.';
-  }
-
-  function method7123949() public pure returns (string memory) {
-    return 'If you know the password, submit it to authenticate().';
-  }
-
-  function authenticate(string memory passkey) public {
-    if(keccak256(abi.encodePacked(passkey)) == keccak256(abi.encodePacked(password))) {
-      cleared = true;
+    function info() public pure returns (string memory) {
+        return "You will find what you need in info1().";
     }
-  }
 
-  function getCleared() public view returns (bool) {
-    return cleared;
-  }
+    function info1() public pure returns (string memory) {
+        return 'Try info2(), but with "hello" as a parameter.';
+    }
+
+    function info2(string memory param) public pure returns (string memory) {
+        if (
+            keccak256(abi.encodePacked(param)) ==
+            keccak256(abi.encodePacked("hello"))
+        ) {
+            return
+                "The property infoNum holds the number of the next info method to call.";
+        }
+        return "Wrong parameter.";
+    }
+
+    function info42() public pure returns (string memory) {
+        return "theMethodName is the name of the next method.";
+    }
+
+    function method7123949() public pure returns (string memory) {
+        return "If you know the password, submit it to authenticate().";
+    }
+
+    function authenticate(string memory passkey) public {
+        if (
+            keccak256(abi.encodePacked(passkey)) ==
+            keccak256(abi.encodePacked(password))
+        ) {
+            cleared = true;
+        }
+    }
+
+    function getCleared() public view returns (bool) {
+        return cleared;
+    }
 }
 ```
-

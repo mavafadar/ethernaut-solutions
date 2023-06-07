@@ -22,7 +22,8 @@
     "privacy": "yarn hardhat test ./test/12-privacy.test.js",
     "gatekeeper-one": "yarn hardhat test ./test/13-gatekeeper-one.test.js",
     "gatekeeper-two": "yarn hardhat test ./test/14-gatekeeper-two.test.js",
-    "naught-coin": "yarn hardhat test ./test/15-naught-coin.test.js"
+    "naught-coin": "yarn hardhat test ./test/15-naught-coin.test.js",
+    "preservation": "yarn hardhat test ./test/16-preservation.test.js"
   },
   "devDependencies": {
     "@chainlink/contracts": "0.4.1",

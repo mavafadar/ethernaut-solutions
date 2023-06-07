@@ -1,13 +1,13 @@
-# Gatekeeper One
+# Naught Coin
 
 ## Challenge Description
 
 NaughtCoin is an ERC20 token and you're already holding all of them. The catch is that you'll only be able to transfer them after a 10 year lockout period. Can you figure out how to get them out to another address so that you can transfer them freely? Complete this level by getting your token balance to 0.
 
- Things that might help
+Things that might help
 
-- The [ERC20](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-20.md) Spec
-- The [OpenZeppelin](https://github.com/OpenZeppelin/zeppelin-solidity/tree/master/contracts) codebase
+-   The [ERC20](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-20.md) Spec
+-   The [OpenZeppelin](https://github.com/OpenZeppelin/zeppelin-solidity/tree/master/contracts) codebase
 
 ## Challenge Code
 
@@ -54,13 +54,20 @@ In this contract, there is a requirement to wait for one year before being able 
 The `ERC20` contract provides two important functions:
 
 ```solidity
-function approve(address spender, uint256 amount) public virtual override returns (bool) {
+function approve(
+    address spender,
+    uint256 amount
+) public virtual override returns (bool) {
     address owner = _msgSender();
     _approve(owner, spender, amount);
     return true;
 }
 
-function transferFrom(address from, address to, uint256 amount) public virtual override returns (bool) {
+function transferFrom(
+    address from,
+    address to,
+    uint256 amount
+) public virtual override returns (bool) {
     address spender = _msgSender();
     _spendAllowance(from, spender, amount);
     _transfer(from, to, amount);
