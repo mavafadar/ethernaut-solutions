@@ -24,7 +24,7 @@ contract Denial {
 
     function withdraw() public {
         uint amountToSend = address(this).balance / 100;
-        partner.call{value: amountToSend}("");
+        partner.call{ value: amountToSend }("");
         payable(owner).transfer(amountToSend);
         timeLastWithdrawn = block.timestamp;
         withdrawPartnerBalances[partner] += amountToSend;
@@ -36,7 +36,6 @@ contract Denial {
         return address(this).balance;
     }
 }
-
 ```
 
 ## Challenge Solution Walkthrough
@@ -85,4 +84,4 @@ If you are using a low level `call` to continue executing in the event an extern
 
 Typically one should follow the [checks-effects-interactions](http://solidity.readthedocs.io/en/latest/security-considerations.html#use-the-checks-effects-interactions-pattern) pattern to avoid reentrancy attacks, there can be other circumstances (such as multiple external calls at the end of a function) where issues such as this can arise.
 
-*Note*: An external `CALL` can use at most 63/64 of the gas currently available at the time of the `CALL`. Thus, depending on how much gas is required to complete a transaction, a transaction of sufficiently high gas (i.e. one such that 1/64 of the gas is capable of completing the remaining opcodes in the parent call) can be used to mitigate this particular attack.
+_Note_: An external `CALL` can use at most 63/64 of the gas currently available at the time of the `CALL`. Thus, depending on how much gas is required to complete a transaction, a transaction of sufficiently high gas (i.e. one such that 1/64 of the gas is capable of completing the remaining opcodes in the parent call) can be used to mitigate this particular attack.

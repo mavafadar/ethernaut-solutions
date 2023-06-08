@@ -27,7 +27,8 @@
     "recovery": "yarn hardhat test ./test/17-recovery.test.js",
     "magic-number": "yarn hardhat test ./test/18-magic-number.test.js",
     "alien-codex": "yarn hardhat test ./test/19-alien-codex.test.js",
-    "denial": "yarn hardhat test ./test/20-denial.test.js"
+    "denial": "yarn hardhat test ./test/20-denial.test.js",
+    "shop": "yarn hardhat test ./test/21-shop.test.js"
   },
   "devDependencies": {
     "@chainlink/contracts": "0.4.1",
