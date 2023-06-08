@@ -65,9 +65,9 @@ RETURN      // Return the value
 
 3. We need to convert the assembly code into bytecode. Here are the opcode values:
 
-- `PUSH1`: 0x60
-- `MSTORE`: 0x52
-- `RETURN`: 0xF3
+-   `PUSH1`: 0x60
+-   `MSTORE`: 0x52
+-   `RETURN`: 0xF3
 
 Combining the opcodes, we get the bytecode: `0x602A60505260206050F3`.
 
@@ -103,6 +103,8 @@ RETURN      // Return the runtime code
 ```
 
 10. Finally, we need to set the solver to the deployed contract address:
+
+Congratulations! You have successfully completed the challenge.
 
 ```javascript
 > await contract.setSolver(solverAddress);

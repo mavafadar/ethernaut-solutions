@@ -79,6 +79,10 @@ Below is a table of challenges and their corresponding files in this repository:
 |        13        | Gatekeeper One  | [Contract](./contracts/13GatekeeperOne.sol)  | [Explanation](./docs/13-gatekeeper-one.md)  | [Solution JS Code](./test/13-gatekeeper-one.test.js)  | [Solution Solidity Code](./contracts/13GatekeeperOneSolution.sol)  |
 |        14        | Gatekeeper Two  | [Contract](./contracts/14GatekeeperTwo.sol)  | [Explanation](./docs/14-gatekeeper-two.md)  | [Solution JS Code](./test/14-gatekeeper-two.test.js)  | [Solution Solidity Code](./contracts/14GatekeeperTwoSolution.sol)  |
 |        15        | Naught Coin     | [Contract](./contracts/15NaughtCoin.sol)     | [Explanation](./docs/15-naught-coin.md)     | [Solution JS Code](./test/15-naught-coin.test.js)     | [Solution Solidity Code](./contracts/15NaughtCoinSolution.sol)     |
+|        16        | Preservation    | [Contract](./contracts/16Preservation.sol)   | [Explanation](./docs/16-preservation.md)    | [Solution JS Code](./test/16-preservation.test.js)    | [Solution Solidity Code](./contracts/16PreservationSolution.sol)   |
+|        17        | Recovery        | [Contract](./contracts/17Recovery.sol)       | [Explanation](./docs/17-recovery.md)        | [Solution JS Code](./test/17-recovery.test.js)        | [Solution Solidity Code](./contracts/17RecoverySolution.sol)       |
+|        18        | Magic Number    | [Contract](./contracts/18MagicNumber.sol)    | [Explanation](./docs/18-magic-number.md)    | [Solution JS Code](./test/18-magic-number.test.js)    | [Solution Solidity Code](./contracts/18MagicNumberSolution.sol)    |
+|        19        | Alien Codex     | [Contract](./contracts/19AlienCodex.sol)     | [Explanation](./docs/19-alien-codex.md)     | [Solution JS Code](./test/19-alien-codex.test.js)     | [Solution Solidity Code](./contracts/19AlienCodexSolution.sol)     |
 
 Feel free to explore the code for each challenge and run the tests to verify the solutions.
 

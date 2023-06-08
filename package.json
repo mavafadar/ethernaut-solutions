@@ -25,7 +25,8 @@
     "naught-coin": "yarn hardhat test ./test/15-naught-coin.test.js",
     "preservation": "yarn hardhat test ./test/16-preservation.test.js",
     "recovery": "yarn hardhat test ./test/17-recovery.test.js",
-    "magic-number": "yarn hardhat test ./test/18-magic-number.test.js"
+    "magic-number": "yarn hardhat test ./test/18-magic-number.test.js",
+    "alien-codex": "yarn hardhat test ./test/19-alien-codex.test.js"
   },
   "devDependencies": {
     "@chainlink/contracts": "0.4.1",
