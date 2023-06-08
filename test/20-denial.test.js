@@ -5,23 +5,23 @@ const { assert } = require("chai")
     Enter the contract address below.
     Use `await contract.address in the console to get the address.
 */
-const CONTRACT_ADDRESS = "0x8eB32F14A8aE977E667044bda802212347Dea21f"
+const CONTRACT_ADDRESS = "0xD0878111548cf76d99f5E754241e5a0E90678A15"
 
-describe("19 Alien Codex", function () {
+describe("20 Denial", function () {
     let player, solutionContract, challengeContract
 
     before(async function () {
         ;[player] = await ethers.getSigners()
         challengeContract = await ethers.getContractAt(
-            "AlienCodex",
+            "Denial",
             CONTRACT_ADDRESS,
             player
         )
         solutionContract = await (
-            await ethers.getContractFactory("AlienCodexSolution", player)
+            await ethers.getContractFactory("DenialSolution", player)
         ).deploy(CONTRACT_ADDRESS)
-        const ownerBefore = await challengeContract.owner()
-        assert.notEqual(ownerBefore.toString(), player.address.toString())
+        const partnerBefore = await challengeContract.partner()
+        assert.notEqual(partnerBefore.toString(), player.address.toString())
     })
 
     it("Execution", async function () {
@@ -30,7 +30,10 @@ describe("19 Alien Codex", function () {
     })
 
     after(async function () {
-        const ownerAfter = await challengeContract.owner()
-        assert.equal(ownerAfter.toString(), player.address.toString())
+        const partnerAfter = await challengeContract.partner()
+        assert.equal(
+            partnerAfter.toString(),
+            solutionContract.address.toString()
+        )
     })
 })

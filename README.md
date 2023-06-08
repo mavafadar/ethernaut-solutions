@@ -83,6 +83,7 @@ Below is a table of challenges and their corresponding files in this repository:
 |        17        | Recovery        | [Contract](./contracts/17Recovery.sol)       | [Explanation](./docs/17-recovery.md)        | [Solution JS Code](./test/17-recovery.test.js)        | [Solution Solidity Code](./contracts/17RecoverySolution.sol)       |
 |        18        | Magic Number    | [Contract](./contracts/18MagicNumber.sol)    | [Explanation](./docs/18-magic-number.md)    | [Solution JS Code](./test/18-magic-number.test.js)    | [Solution Solidity Code](./contracts/18MagicNumberSolution.sol)    |
 |        19        | Alien Codex     | [Contract](./contracts/19AlienCodex.sol)     | [Explanation](./docs/19-alien-codex.md)     | [Solution JS Code](./test/19-alien-codex.test.js)     | [Solution Solidity Code](./contracts/19AlienCodexSolution.sol)     |
+|        20        | Denial          | [Contract](./contracts/20Denial.sol)         | [Explanation](./docs/20-denial.md)          | [Solution JS Code](./test/20-denial.test.js)          | [Solution Solidity Code](./contracts/20DenialSolution.sol)         |
 
 Feel free to explore the code for each challenge and run the tests to verify the solutions.
 
