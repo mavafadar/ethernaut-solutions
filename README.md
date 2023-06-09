@@ -86,6 +86,7 @@ Below is a table of challenges and their corresponding files in this repository:
 |        20        | Denial          | [Contract](./contracts/20Denial.sol)         | [Explanation](./docs/20-denial.md)          | [Solution JS Code](./test/20-denial.test.js)          | [Solution Solidity Code](./contracts/20DenialSolution.sol)         |
 |        21        | Shop            | [Contract](./contracts/21Shop.sol)           | [Explanation](./docs/21-shop.md)            | [Solution JS Code](./test/21-shop.test.js)            | [Solution Solidity Code](./contracts/21ShopSolution.sol)           |
 |        22        | Dex             | [Contract](./contracts/22Dex.sol)            | [Explanation](./docs/22-dex.md)             | [Solution JS Code](./test/22-dex.test.js)             | [Solution Solidity Code](./contracts/22DexSolution.sol)            |
+|        23        | Dex Two         | [Contract](./contracts/23DexTwo.sol)         | [Explanation](./docs/23-dex-two.md)         | [Solution JS Code](./test/23-dex-two.test.js)         | [Solution Solidity Code](./contracts/23DexTwoSolution.sol)         |
 
 Feel free to explore the code for each challenge and run the tests to verify the solutions.
 

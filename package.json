@@ -29,7 +29,8 @@
     "alien-codex": "yarn hardhat test ./test/19-alien-codex.test.js",
     "denial": "yarn hardhat test ./test/20-denial.test.js",
     "shop": "yarn hardhat test ./test/21-shop.test.js",
-    "dex": "yarn hardhat test ./test/22-dex.test.js"
+    "dex": "yarn hardhat test ./test/22-dex.test.js",
+    "dex-two": "yarn hardhat test ./test/23-dex-two.test.js"
   },
   "devDependencies": {
     "@chainlink/contracts": "0.4.1",
