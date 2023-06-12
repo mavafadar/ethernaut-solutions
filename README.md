@@ -87,6 +87,7 @@ Below is a table of challenges and their corresponding files in this repository:
 |        21        | Shop            | [Contract](./contracts/21Shop.sol)           | [Explanation](./docs/21-shop.md)            | [Solution JS Code](./test/21-shop.test.js)            | [Solution Solidity Code](./contracts/21ShopSolution.sol)           |
 |        22        | Dex             | [Contract](./contracts/22Dex.sol)            | [Explanation](./docs/22-dex.md)             | [Solution JS Code](./test/22-dex.test.js)             | [Solution Solidity Code](./contracts/22DexSolution.sol)            |
 |        23        | Dex Two         | [Contract](./contracts/23DexTwo.sol)         | [Explanation](./docs/23-dex-two.md)         | [Solution JS Code](./test/23-dex-two.test.js)         | [Solution Solidity Code](./contracts/23DexTwoSolution.sol)         |
+|        24        | Puzzle Wallet   | [Contract](./contracts/24PuzzleWallet.sol)   | [Explanation](./docs/24-puzzle-wallet.md)   | [Solution JS Code](./test/24-puzzle-wallet.test.js)   | [Solution Solidity Code](./contracts/24PuzzleWalletSolution.sol)   |
 
 Feel free to explore the code for each challenge and run the tests to verify the solutions.
 
