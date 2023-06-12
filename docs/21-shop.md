@@ -6,8 +6,8 @@
 
 ##### Things that might help:
 
-- `Shop` expects to be used from a `Buyer`
-- Understanding restrictions of view functions
+-   `Shop` expects to be used from a `Buyer`
+-   Understanding restrictions of view functions
 
 ## Challenge Code
 
@@ -32,7 +32,6 @@ contract Shop {
         }
     }
 }
-
 ```
 
 ## Challenge Solution Walkthrough
@@ -56,14 +55,14 @@ contract Buyer {
 
     function price() public view returns (uint256) {
         if (shop.isSold() == false) {
-            return 100;  // Return a price of 100 when the product is not sold
+            return 100; // Return a price of 100 when the product is not sold
         } else {
-            return 0;    // Return a price of 0 when the product is sold
+            return 0; // Return a price of 0 when the product is sold
         }
     }
 
     function solveChallenge() public {
-        shop.buy();  // Call the buy() function of the Shop contract
+        shop.buy(); // Call the buy() function of the Shop contract
     }
 }
 ```

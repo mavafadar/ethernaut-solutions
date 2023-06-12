@@ -10,12 +10,12 @@ They needed this contract to be upgradeable in case the code contained a bug, an
 
 Little did they know, their lunch money was at risk…
 
- You'll need to hijack this wallet to become the admin of the proxy.
+You'll need to hijack this wallet to become the admin of the proxy.
 
- Things that might help:
+Things that might help:
 
-- Understanding how `delegatecall` works and how `msg.sender` and `msg.value` behaves when performing one.
-- Knowing about proxy patterns and the way they handle storage variables.
+-   Understanding how `delegatecall` works and how `msg.sender` and `msg.value` behaves when performing one.
+-   Knowing about proxy patterns and the way they handle storage variables.
 
 ## Challenge Code
 
@@ -99,7 +99,7 @@ contract PuzzleWallet {
     ) external payable onlyWhitelisted {
         require(balances[msg.sender] >= value, "Insufficient balance");
         balances[msg.sender] -= value;
-        (bool success, ) = to.call{value: value}(data);
+        (bool success, ) = to.call{ value: value }(data);
         require(success, "Execution failed");
     }
 
@@ -120,7 +120,6 @@ contract PuzzleWallet {
         }
     }
 }
-
 ```
 
 ## Challenge Solution Walkthrough
@@ -141,19 +140,19 @@ To gain ownership of the `PuzzleProxy` contract and become the admin, follow the
 
 3. Understand the functions that can change the `admin`:
 
-   - The `constructor` sets the initial `admin` value and cannot be used to change it.
+    - The `constructor` sets the initial `admin` value and cannot be used to change it.
 
-   - The `approveNewAdmin()` function allows changing the `admin` but requires the caller to be the current `admin`.
+    - The `approveNewAdmin()` function allows changing the `admin` but requires the caller to be the current `admin`.
 
-   - No other function exists to change the `admin` directly.
+    - No other function exists to change the `admin` directly.
 
 4. Identify that changing the `maxBalance` of the `PuzzleWallet` will indirectly change the `admin` because both values share the same storage slot.
 
 5. Explore the functions that can change the `maxBalance`:
 
-   - The `init()` function sets the initial `maxBalance` but can only be called when the current `maxBalance` is zero.
+    - The `init()` function sets the initial `maxBalance` but can only be called when the current `maxBalance` is zero.
 
-   - The `setMaxBalance()` function allows changing the `maxBalance` when the contract balance is zero.
+    - The `setMaxBalance()` function allows changing the `maxBalance` when the contract balance is zero.
 
 6. Note that the `execute()` function can decrease the contract balance but requires a prior deposit.
 
@@ -161,15 +160,15 @@ To gain ownership of the `PuzzleProxy` contract and become the admin, follow the
 
 8. Formulate an exploit strategy to change the `maxBalance` and, consequently, the `admin`:
 
-   - Call the `deposit()` function twice using a `multicall()`, with the value set to 0.001 ether for each call.
+    - Call the `deposit()` function twice using a `multicall()`, with the value set to 0.001 ether for each call.
 
-   - Use the `multicall()` function to call two functions: 1) `deposit()`, and 2) `multicall()` itself (nested call).
+    - Use the `multicall()` function to call two functions: 1) `deposit()`, and 2) `multicall()` itself (nested call).
 
-   - By depositing a total of 0.002 ether and tricking the contract into believing that 0.002 ether has been deposited, the contract balance and `balances` mapping will reflect this value.
+    - By depositing a total of 0.002 ether and tricking the contract into believing that 0.002 ether has been deposited, the contract balance and `balances` mapping will reflect this value.
 
-   - Withdraw all the funds from the contract to set the balance to zero.
+    - Withdraw all the funds from the contract to set the balance to zero.
 
-   - Change the `maxBalance` to your desired value to indirectly change the `admin`.
+    - Change the `maxBalance` to your desired value to indirectly change the `admin`.
 
 9. Implement the `PuzzleWalletSolution` contract to automate the exploit process:
 
@@ -208,7 +207,7 @@ contract PuzzleWalletSolution {
 
         uint256 targetBalance = msg.value;
 
-        puzzleWallet.multicall{value: targetBalance}(functionCalls);
+        puzzleWallet.multicall{ value: targetBalance }(functionCalls);
         puzzleWallet.execute(msg.sender, 2 * targetBalance, "");
         puzzleWallet.setMaxBalance(uint256(uint160(msg.sender)));
     }
@@ -217,15 +216,15 @@ contract PuzzleWalletSolution {
 
 10. Using this contract, you can execute the `solveChallenge()` function to exploit the vulnerability. The steps executed by this contract include:
 
-    - Changing the `pendingAdmin` of the `PuzzleProxy` to the address of the `PuzzleWalletSolution` contract, making it the pending admin.
+    -   Changing the `pendingAdmin` of the `PuzzleProxy` to the address of the `PuzzleWalletSolution` contract, making it the pending admin.
 
-    - Adding the `PuzzleWalletSolution` contract to the `whitelisted` addresses to enable calling `multicall()`, `deposit()`, and `execute()` functions.
+    -   Adding the `PuzzleWalletSolution` contract to the `whitelisted` addresses to enable calling `multicall()`, `deposit()`, and `execute()` functions.
 
-    - Preparing the call to `deposit()` and `multicall()` functions using a `multicall()` within a `multicall()`, with a value of 0.001 ether.
+    -   Preparing the call to `deposit()` and `multicall()` functions using a `multicall()` within a `multicall()`, with a value of 0.001 ether.
 
-    - Draining all funds from the `PuzzleWallet` contract by calling `execute()` with a value of 2 * target balance.
+    -   Draining all funds from the `PuzzleWallet` contract by calling `execute()` with a value of 2 \* target balance.
 
-    - Setting the `maxBalance` to your address, indirectly changing the `admin` to your address.
+    -   Setting the `maxBalance` to your address, indirectly changing the `admin` to your address.
 
 By following these steps, you can successfully gain ownership of the `PuzzleProxy` contract and become the admin.
 

@@ -31,7 +31,8 @@
     "shop": "yarn hardhat test ./test/21-shop.test.js",
     "dex": "yarn hardhat test ./test/22-dex.test.js",
     "dex-two": "yarn hardhat test ./test/23-dex-two.test.js",
-    "puzzle-wallet": "yarn hardhat test ./test/24-puzzle-wallet.test.js"
+    "puzzle-wallet": "yarn hardhat test ./test/24-puzzle-wallet.test.js",
+    "motorbike": "yarn hardhat test ./test/25-motorbike.test.js"
   },
   "devDependencies": {
     "@chainlink/contracts": "0.4.1",
