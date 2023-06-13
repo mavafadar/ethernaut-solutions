@@ -53,8 +53,6 @@ contract GatekeeperTwo {
 
 ## Challenge Solution Walkthrough
 
-Apologies for the confusion once again. Based on your explanation, here is the correct solution for each gate:
-
 **Gate One:** To pass this gate, we need to interact with the target contract using a contract deployed by us instead of directly calling the function from our externally owned account (EOA). By doing so, the `msg.sender` will be the address of the deployed contract, and `tx.origin` will be the address of our EOA.
 
 **Gate Two:** This gate requires the size of the calling contract to be zero. To achieve this, we can call the target contract from the `constructor()` of another contract. When a contract's constructor is executed, the size of the caller contract is zero. By calling the target contract's function from the `constructor()` of a new contract, we can pass this gate.
