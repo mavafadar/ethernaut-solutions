@@ -91,6 +91,7 @@ Below is a table of challenges and their corresponding files in this repository:
 |        25        |     Motorbike      |    [Contract](./contracts/25Motorbike.sol)     |     [Explanation](./docs/25-motorbike.md)      |     [Solution JS Code](./test/25-motorbike.test.js)      |    [Solution Solidity Code](./contracts/25MotorbikeSolution.sol)     |
 |        26        | Double Entry Point | [Contract](./contracts/26DoubleEntryPoint.sol) | [Explanation](./docs/26-double-entry-point.md) | [Solution JS Code](./test/26-double-entry-point.test.js) | [Solution Solidity Code](./contracts/26DoubleEntryPointSolution.sol) |
 |        27        |   Good Samaritan   |  [Contract](./contracts/27GoodSamaritan.sol)   |   [Explanation](./docs/27-good-samaritan.md)   |  [Solution JS Code](./test//27-good-samaritan.test.js)   |  [Solution Solidity Code](./contracts/27GoodSamaritanSolution.sol)   |
+|        28        |  Gatekeeper Three  | [Contract](./contracts/28GatekeeperThree.sol)  |  [Explanation](./docs/28-gatekeeper-three.md)  |  [Solution JS Code](./test/28-gatekeeper-three.test.js)  | [Solution Solidity Code](./contracts/28GatekeeperThreeSolution.sol)  |
 
 Feel free to explore the code for each challenge and run the tests to verify the solutions.
 
