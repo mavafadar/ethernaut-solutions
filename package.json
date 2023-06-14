@@ -35,7 +35,8 @@
     "motorbike": "yarn hardhat test ./test/25-motorbike.test.js",
     "double-entry-point": "yarn hardhat test ./test/26-double-entry-point.test.js",
     "good-samaritan": "yarn hardhat test ./test/27-good-samaritan.test.js",
-    "gatekeeper-three": "yarn hardhat test ./test/28-gatekeeper-three.test.js"
+    "gatekeeper-three": "yarn hardhat test ./test/28-gatekeeper-three.test.js",
+    "switch": "yarn hardhat test ./test/29-switch.test.js"
   },
   "devDependencies": {
     "@chainlink/contracts": "0.4.1",
